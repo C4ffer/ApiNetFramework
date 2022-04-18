@@ -1,0 +1,7 @@
+Z:\Savino - EC9\AulaSavino_ConsoleClient\bin\Debug\AulaSavino_ConsoleClient.exe.config
+Z:\Savino - EC9\AulaSavino_ConsoleClient\bin\Debug\AulaSavino_ConsoleClient.exe
+Z:\Savino - EC9\AulaSavino_ConsoleClient\bin\Debug\AulaSavino_ConsoleClient.pdb
+Z:\Savino - EC9\AulaSavino_ConsoleClient\obj\Debug\AulaSavino_ConsoleClient.csprojAssemblyReference.cache
+Z:\Savino - EC9\AulaSavino_ConsoleClient\obj\Debug\AulaSavino_ConsoleClient.csproj.CoreCompileInputs.cache
+Z:\Savino - EC9\AulaSavino_ConsoleClient\obj\Debug\AulaSavino_ConsoleClient.exe
+Z:\Savino - EC9\AulaSavino_ConsoleClient\obj\Debug\AulaSavino_ConsoleClient.pdb
