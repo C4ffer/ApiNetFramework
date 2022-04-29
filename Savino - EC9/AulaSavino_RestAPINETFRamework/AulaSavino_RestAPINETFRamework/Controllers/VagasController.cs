@@ -4,10 +4,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Http;
+using Newtonsoft.Json;
 
 namespace AulaSavino_RestAPINETFRamework.Controllers
 {
-    [RoutePrefix("api/usuario")]
+    [RoutePrefix("api/vagas")]
     public class VagasController : ApiController
     {
         private static List<VagasModel> listaVagas = new List<VagasModel>();
@@ -17,7 +18,7 @@ namespace AulaSavino_RestAPINETFRamework.Controllers
         public string CadastrarVaga(VagasModel vaga)
         {
             listaVagas.Add(vaga);
-            return "Vaga cadastrada com sucesso!";
+            return JsonConvert.SerializeObject("Vaga cadastrada com sucesso!");
         }
 
 
@@ -38,42 +39,53 @@ namespace AulaSavino_RestAPINETFRamework.Controllers
 
                 return s;
             }).ToList();
-            return "Vaga alterada com sucesso!";
+            return JsonConvert.SerializeObject("Vaga alterada com sucesso!");
         }
 
         [AcceptVerbs("DELETE")]
         [Route("ExcluirVaga/{codigo}")]
         public string ExcluirVaga(int codigo)
         {
+            try
+            {
             VagasModel vaga = listaVagas.Where(n => n.CodigoVaga == codigo)
             .Select(n => n)
             .First();
             listaVagas.Remove(vaga);
-            return "Registro excluido com sucesso!";
+            return JsonConvert.SerializeObject("Registro excluido com sucesso!");
+            }
+            catch (Exception ex)
+            {
+                return JsonConvert.SerializeObject($"Codigo de vaga inexistente ou inválido! \nErro: {ex}");
+            }
+
         }
 
         [AcceptVerbs("GET")]
         [Route("ListarVagaPorCodigo/{codigo}")]
-        public VagasModel ConsultarVagaPorCodigo(int codigo)
+        public string ConsultarVagaPorCodigo(int codigo)
         {
             VagasModel vaga = listaVagas.Where(n => n.CodigoVaga == codigo)
             .Select(n => n)
             .FirstOrDefault();
-            return vaga;
+            return JsonConvert.SerializeObject(vaga);
         }
 
         [AcceptVerbs("GET")]
         [Route("ListarVagas")]
-        public List<VagasModel> ConsultarVagas()
+        public string ConsultarVagas()
         {
             CarregarVagas();
-            return listaVagas;
+            return JsonConvert.SerializeObject(listaVagas);
         }
         private void CarregarVagas()
         {
-            listaVagas.Clear();
-            listaVagas.Add(new VagasModel(1, "Google", "vaga 1", "Trabalhar", "Ensino Médio Completo", "Salário"));
-            listaVagas.Add(new VagasModel(2, "Microsoft", "vaga 2", "Trabalhar", "Ensino Médio Completo", "Salário"));
+            if (!listaVagas.Any())
+            {
+                listaVagas.Clear();
+                listaVagas.Add(new VagasModel(1, "Google", "vaga 1", "Trabalhar", "Ensino Médio Completo", "Salário"));
+                listaVagas.Add(new VagasModel(2, "Microsoft", "vaga 2", "Trabalhar", "Ensino Médio Completo", "Salário"));
+            }
         }
     }
 }

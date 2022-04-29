@@ -4,6 +4,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Http;
+using Newtonsoft.Json;
+
 
 namespace AulaSavino_RestAPINETFRamework.Controllers
 {
@@ -17,7 +19,7 @@ namespace AulaSavino_RestAPINETFRamework.Controllers
         public string CadastrarUsuario(UsuarioModel usuario)
         {
             listaUsuarios.Add(usuario);
-            return "Usuário cadastrado com sucesso!";
+            return JsonConvert.SerializeObject("Usuário cadastrado com sucesso!");
         }
 
 
@@ -38,42 +40,56 @@ namespace AulaSavino_RestAPINETFRamework.Controllers
                 s.Usuario = usuario.Usuario;
                 return s;
             }).ToList();
-            return "Usuário alterado com sucesso!";
+            return JsonConvert.SerializeObject("Usuário alterado com sucesso!");
         }
 
         [AcceptVerbs("DELETE")]
         [Route("ExcluirUsuario/{codigo}")]
         public string ExcluirUsuario(int codigo)
         {
-            UsuarioModel usuario = listaUsuarios.Where(n => n.CodigoUsuario == codigo)
-            .Select(n => n)
-            .First();
-            listaUsuarios.Remove(usuario);
-            return "Registro excluido com sucesso!";
+            try
+            {
+                UsuarioModel usuario = listaUsuarios.Where(n => n.CodigoUsuario == codigo)
+                .Select(n => n)
+                .First();
+
+                listaUsuarios.Remove(usuario);
+                return JsonConvert.SerializeObject("Registro excluido com sucesso!");
+            }
+            catch(Exception ex)
+            {
+                return JsonConvert.SerializeObject($"Codigo de usuario inexistente ou inválido! \nErro: {ex}");
+            }            
+
+
         }
 
         [AcceptVerbs("GET")]
         [Route("ListarUsuarioPorCodigo/{codigo}")]
-        public UsuarioModel ConsultarUsuarioPorCodigo(int codigo)
+        public string ConsultarUsuarioPorCodigo(int codigo)
         {
             UsuarioModel usuario = listaUsuarios.Where(n => n.CodigoUsuario == codigo)
             .Select(n => n)
             .FirstOrDefault();
-            return usuario;
+            return JsonConvert.SerializeObject(usuario);
         }
 
         [AcceptVerbs("GET")]
         [Route("ListarUsuarios")]
-        public List<UsuarioModel> ConsultarUsuarios()
+        public string ConsultarUsuarios()
         {
             CarregarUsuarios();
-            return listaUsuarios;
+            return JsonConvert.SerializeObject(listaUsuarios, Formatting.Indented);
         }
         private void CarregarUsuarios()
         {
-            listaUsuarios.Clear();
-            listaUsuarios.Add(new UsuarioModel(1, "Pedro", "ped","123","Estudante","(11)97864-5647", "ped@teste.com.br"));
-            listaUsuarios.Add(new UsuarioModel(1, "Milena", "mi","123","Estudante","(11)97864-1198", "mi@teste.com.br"));
+            if (!listaUsuarios.Any())
+            {
+                listaUsuarios.Clear();
+                listaUsuarios.Add(new UsuarioModel(1, "Pedro", "ped", "123", "Estudante", "(11)97864-5647", "ped@teste.com.br"));
+                listaUsuarios.Add(new UsuarioModel(2, "Milena", "mi", "123", "Estudante", "(11)97864-1198", "mi@teste.com.br"));
+            }
+
         }
 
     }

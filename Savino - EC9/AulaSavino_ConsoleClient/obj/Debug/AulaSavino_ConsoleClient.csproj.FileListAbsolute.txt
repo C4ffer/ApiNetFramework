@@ -5,3 +5,11 @@ Z:\Savino - EC9\AulaSavino_ConsoleClient\obj\Debug\AulaSavino_ConsoleClient.cspr
 Z:\Savino - EC9\AulaSavino_ConsoleClient\obj\Debug\AulaSavino_ConsoleClient.csproj.CoreCompileInputs.cache
 Z:\Savino - EC9\AulaSavino_ConsoleClient\obj\Debug\AulaSavino_ConsoleClient.exe
 Z:\Savino - EC9\AulaSavino_ConsoleClient\obj\Debug\AulaSavino_ConsoleClient.pdb
+C:\Users\Felipe\Documents\FTT\9° Semestre\GIT\ApiNetFramework\Savino - EC9\AulaSavino_ConsoleClient\bin\Debug\AulaSavino_ConsoleClient.exe.config
+C:\Users\Felipe\Documents\FTT\9° Semestre\GIT\ApiNetFramework\Savino - EC9\AulaSavino_ConsoleClient\bin\Debug\AulaSavino_ConsoleClient.exe
+C:\Users\Felipe\Documents\FTT\9° Semestre\GIT\ApiNetFramework\Savino - EC9\AulaSavino_ConsoleClient\bin\Debug\AulaSavino_ConsoleClient.pdb
+C:\Users\Felipe\Documents\FTT\9° Semestre\GIT\ApiNetFramework\Savino - EC9\AulaSavino_ConsoleClient\obj\Debug\AulaSavino_ConsoleClient.csproj.AssemblyReference.cache
+C:\Users\Felipe\Documents\FTT\9° Semestre\GIT\ApiNetFramework\Savino - EC9\AulaSavino_ConsoleClient\obj\Debug\AulaSavino_ConsoleClient.csproj.SuggestedBindingRedirects.cache
+C:\Users\Felipe\Documents\FTT\9° Semestre\GIT\ApiNetFramework\Savino - EC9\AulaSavino_ConsoleClient\obj\Debug\AulaSavino_ConsoleClient.csproj.CoreCompileInputs.cache
+C:\Users\Felipe\Documents\FTT\9° Semestre\GIT\ApiNetFramework\Savino - EC9\AulaSavino_ConsoleClient\obj\Debug\AulaSavino_ConsoleClient.exe
+C:\Users\Felipe\Documents\FTT\9° Semestre\GIT\ApiNetFramework\Savino - EC9\AulaSavino_ConsoleClient\obj\Debug\AulaSavino_ConsoleClient.pdb
