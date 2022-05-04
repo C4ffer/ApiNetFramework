@@ -13,3 +13,10 @@ C:\Users\Felipe\Documents\FTT\9° Semestre\GIT\ApiNetFramework\Savino - EC9\Aula
 C:\Users\Felipe\Documents\FTT\9° Semestre\GIT\ApiNetFramework\Savino - EC9\AulaSavino_ConsoleClient\obj\Debug\AulaSavino_ConsoleClient.csproj.CoreCompileInputs.cache
 C:\Users\Felipe\Documents\FTT\9° Semestre\GIT\ApiNetFramework\Savino - EC9\AulaSavino_ConsoleClient\obj\Debug\AulaSavino_ConsoleClient.exe
 C:\Users\Felipe\Documents\FTT\9° Semestre\GIT\ApiNetFramework\Savino - EC9\AulaSavino_ConsoleClient\obj\Debug\AulaSavino_ConsoleClient.pdb
+C:\EC8-9\APINetFrameWork\ApiNetFramework\Savino - EC9\AulaSavino_ConsoleClient\bin\Debug\AulaSavino_ConsoleClient.exe.config
+C:\EC8-9\APINetFrameWork\ApiNetFramework\Savino - EC9\AulaSavino_ConsoleClient\bin\Debug\AulaSavino_ConsoleClient.exe
+C:\EC8-9\APINetFrameWork\ApiNetFramework\Savino - EC9\AulaSavino_ConsoleClient\bin\Debug\AulaSavino_ConsoleClient.pdb
+C:\EC8-9\APINetFrameWork\ApiNetFramework\Savino - EC9\AulaSavino_ConsoleClient\obj\Debug\AulaSavino_ConsoleClient.csproj.AssemblyReference.cache
+C:\EC8-9\APINetFrameWork\ApiNetFramework\Savino - EC9\AulaSavino_ConsoleClient\obj\Debug\AulaSavino_ConsoleClient.csproj.CoreCompileInputs.cache
+C:\EC8-9\APINetFrameWork\ApiNetFramework\Savino - EC9\AulaSavino_ConsoleClient\obj\Debug\AulaSavino_ConsoleClient.exe
+C:\EC8-9\APINetFrameWork\ApiNetFramework\Savino - EC9\AulaSavino_ConsoleClient\obj\Debug\AulaSavino_ConsoleClient.pdb

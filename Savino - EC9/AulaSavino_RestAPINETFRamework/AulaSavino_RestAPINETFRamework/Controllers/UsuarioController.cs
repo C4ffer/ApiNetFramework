@@ -5,10 +5,11 @@ using System.Linq;
 using System.Web;
 using System.Web.Http;
 using Newtonsoft.Json;
-
+using System.Web.Http.Cors;
 
 namespace AulaSavino_RestAPINETFRamework.Controllers
 {
+    [EnableCors(origins: "http://localhost:4200", headers: "*", methods: "*")]
     [RoutePrefix("api/usuario")]
     public class UsuarioController: ApiController
     {
