@@ -1,4 +1,5 @@
 # ***APLICAÇÃO---PLATAFORMA DE EMPREGOS***
+
 Repositorio voltado para o desenvolvimento FrontEnd do nosso projeto Sistemas distribuidos em EC9 com Angular Framework, TS
 
 
@@ -10,8 +11,10 @@ que torna possivel realizar requisições de ***Cadastro, listagem, exclusão e 
 OBS: O client funciona juntamente com a api rodando localmente e com persistência de dados em tempo de execução
 
 ***Clonagem***
+
 Utilize o git clone através do https ou ssh
 execute o comando:
+
 ***git clone https://github.com/PedroCarvalhoKnok/-FRONTEND-ANGULARCLI---CUIDADO_REMOTO-PLATAFORMA-EMPREGOS.git***
 
 ***Instalação e execução***
@@ -30,6 +33,21 @@ Para realizar a instalação do Angular Cli pelo terminal do visual studio code 
 4. Para rodar a aplicação execute o comando:
 
 ***ng serve***
+
+
+***Rotas de telas***
+
+Cadastro Usuário - usuario/registrar
+
+Listar Usuário - usuario/listar
+
+Cadastro vagas - vagas/registrar
+
+Listar vagas - vagas/listar
+
+Cadastrar curso - cursos/registrar
+
+Listar curso - cursos/listar
 
 ***Integrantes***
 
