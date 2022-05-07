@@ -32,6 +32,7 @@ Para realizar a instalação do Angular Cli pelo terminal do visual studio code 
 ***ng serve***
 
 ***Integrantes***
+
 Felipe Soares - 081180008
 Lucas Caffer - 081180024
 Milena Barbosa - 081180026
