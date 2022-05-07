@@ -23,18 +23,17 @@ execute o comando:
 1. Inicialmente é necessario possuir a IDE visual studio code caso não possua instale  ***[aqui](https://code.visualstudio.com/download)***
 
 2. Para rodar a aplicação na sua máquina(browser) é necessario ter o ***Angular Cli** instalado.
-Para realizar a instalação do Angular Cli pelo terminal do visual studio code caso não possua execute:
+Para realizar a instalação do Angular Cli via cmd pelo terminal, ***caso não possua*** execute:
 
 ***npm install -g @angular/cli***
 
-3. Após ter instalado ou caso já possua execute no terminal o comando para instalação das dependencias do node:
+3. Após ter instalado ou caso já possua execute via cmd dentro da pasta ***PlataformaEmpregosApp*** o comando para instalação das dependencias do node:
 
 ***npm install***
 
 4. Para rodar a aplicação execute o comando:
 
 ***ng serve***
-
 
 ***Rotas de telas***
 
