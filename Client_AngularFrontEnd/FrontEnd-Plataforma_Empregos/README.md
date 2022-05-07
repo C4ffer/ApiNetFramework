@@ -1,7 +1,8 @@
-# ***APLICAÇÃO---PLATAFORMA DE EMPREGOS***
+# ***APLICAÇÃO PLATAFORMA DE EMPREGOS***
 
 Repositorio voltado para o desenvolvimento FrontEnd do nosso projeto Sistemas distribuidos em EC9 com Angular Framework, TS
 
+porta default -> localhost:4200
 
 ***Descrição Geral***
 
@@ -52,7 +53,10 @@ Listar curso - cursos/listar
 ***Integrantes***
 
 Felipe Soares - 081180008
+
 Lucas Caffer - 081180024
+
 Milena Barbosa - 081180026
+
 Pedro Knok - 081180028
 
